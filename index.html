@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Rules | NextGen Hosting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --neon-green: #39FF14;
+            --bg-black: #050505;
+            --card-bg: #0f0f0f;
+            --border-color: rgba(57, 255, 20, 0.1);
+            --text-gray: #a0a0a0;
+        }
+
+        body {
+            background-color: var(--bg-black);
+            color: #ffffff;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrapper {
+            max-width: 900px;
+            width: 95%;
+            margin: 40px 0;
+        }
+
+        /* Top Status Bar */
+        .status-bar {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 12px 25px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            box-shadow: 0 0 20px rgba(57, 255, 20, 0.02);
+        }
+
+        .status-dot {
+            height: 8px;
+            width: 8px;
+            background-color: var(--neon-green);
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+            box-shadow: 0 0 10px var(--neon-green);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.3; }
+            100% { opacity: 1; }
+        }
+
+        .container {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Decorative Background Text */
+        .bg-watermark {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            font-size: 150px;
+            font-weight: 900;
+            color: rgba(57, 255, 20, 0.02);
+            user-select: none;
+            pointer-events: none;
+        }
+
+        .header {
+            margin-bottom: 50px;
+            border-left: 4px solid var(--neon-green);
+            padding-left: 25px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            letter-spacing: -1px;
+        }
+
+        .brand { color: var(--neon-green); }
+
+        h2 {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--neon-green);
+            margin-top: 45px;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::after {
+            content: '';
+            height: 1px;
+            flex: 1;
+            background: linear-gradient(to right, rgba(57, 255, 20, 0.2), transparent);
+            margin-left: 20px;
+        }
+
+        .rule-item {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .rule-item:hover {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .rule-number {
+            color: var(--neon-green);
+            font-weight: 800;
+            font-family: monospace;
+            font-size: 1.1rem;
+        }
+
+        .rule-text {
+            color: var(--text-gray);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .rule-text b {
+            color: #fff;
+        }
+
+        .footer-cta {
+            margin-top: 60px;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            padding-top: 40px;
+        }
+
+        .btn {
+            background: var(--neon-green);
+            color: #000;
+            padding: 15px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 800;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            box-shadow: 0 0 25px rgba(57, 255, 20, 0.4);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 30px; }
+            h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="status-bar">
+        <div style="font-size: 0.8rem; font-weight: bold; color: var(--text-gray);">
+            <span class="status-dot"></span> SYSTEM STATUS: OPERATIONAL
+        </div>
+        <div style="font-size: 0.8rem; color: var(--text-gray);">NEXTGEN-DOC-v2.0</div>
+    </div>
+
+    <div class="container">
+        <div class="bg-watermark">RULES</div>
+        
+        <div class="header">
+            <h1><span class="brand">NextGen</span> Server Rules</h1>
+            <p style="color: var(--text-gray); margin: 5px 0 0 0;">Established 2022 • Official Community Guidelines</p>
+        </div>
+
+        <h2>01. General Conduct</h2>
+        <div class="rule-item">
+            <div class="rule-number">1.1</div>
+            <div class="rule-text">Disrespecting users, abusing staff, or using inappropriate emojis in chats/DMs is <b>strictly prohibited</b>.</div>
+        </div>
+        <div class="rule-item">
+            <div class="rule-number">1.2</div>
+            <div class="rule-text">Flooding chats with <b>spam messages</b> or unnecessary pings will not be tolerated.</div>
+        </div>
+        <div class="rule-item">
+            <div class="rule-number">1.3</div>
+            <div class="rule-text">Self-advertising, promotions, or sharing social links in chats or DMs is <b>forbidden</b>.</div>
+        </div>
+        <div class="rule-item">
+            <div class="rule-number">1.4</div>
+            <div class="rule-text">Keep public chats clean. Use specific bot channels for commands. Using bots in general chat may result in an <b>invites reset</b>.</div>
+        </div>
+
+        <h2>02. Ticket Support</h2>
+        <div class="rule-item">
+            <div class="rule-number">2.1</div>
+            <div class="rule-text">Abuse or harassment within support tickets will result in an immediate <b>permanent ban</b>.</div>
+        </div>
+        <div class="rule-item">
+            <div class="rule-number">2.2</div>
+            <div class="rule-text">Do not spam tickets for faster support. Our team responds as quickly as possible; <b>patience is required</b>.</div>
+        </div>
+        <div class="rule-item">
+            <div class="rule-number">2.5</div>
+            <div class="rule-text">Payment screenshots and proof of purchase <b>must</b> be provided via the ticket channel for verification.</div>
+        </div>
+
+        <h2>03. Reselling</h2>
+        <div class="rule-item">
+            <div class="rule-number">3.1</div>
+            <div class="rule-text">We allow providers to resell NextGen services under <b>approved conditions only</b>.</div>
+        </div>
+        <div class="rule-item">
+            <div class="rule-number">3.2</div>
+            <div class="rule-text">Resellers must contact the <b>support team</b> for authorization before taking any action.</div>
+        </div>
+
+        <div class="footer-cta">
+            <p style="color: var(--text-gray); margin-bottom: 25px;">Failure to follow these rules will result in account suspension or termination.</p>
+            <a href="https://discord.gg/TvCMaBE4kq" class="btn">ACCEPT & JOIN DISCORD</a>
+            <p style="font-size: 0.7rem; color: #444; margin-top: 30px;">&copy; 2026 NEXTGEN HOSTING | ENTERPRISE GRADE SOLUTIONS</p>
+        </div>
+    </div>
+</div>
+
+</body>
+  </html>
+
